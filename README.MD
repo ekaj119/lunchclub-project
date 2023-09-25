@@ -1,4 +1,4 @@
-# 
+# Lunch Club Project
 
 
 ## Our Mission
@@ -8,13 +8,13 @@
 
 
 ## The Two API's
-* [Official Joke](https://official-joke-api.appspot.com/random_joke) - 
-* [Advices lip](https://api.adviceslip.com/advice) - 
+* [D]() - 
+* [D]() - 
 
 ## The Creators:
 **Steven** - 
 
-**Amanda** - 
+**Amanda** 
 
 **Jake** - 
 
@@ -31,10 +31,10 @@ Challenges that arose:
 
 
 # Links to Project
-* [Dad A Base](https://rbracker.github.io/breakfastclub-project/)
-* [Dad A Base GitHub Work](https://github.com/rbracker/breakfastclub-project)
+* [Lunch Club Project](git@github.com:ekaj119/lunchclub-project.git)
+* [D]()
 
 ### PowerPoint Presentation Link:
-[Dad A Base PowerPoint]()
+[D]()
 
 # Enjoy
