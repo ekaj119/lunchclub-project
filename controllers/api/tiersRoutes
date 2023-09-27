@@ -1,0 +1,15 @@
+const router = require('express').Router();
+const { Tiers } = require('../../models');
+//Not sure if i need this, this will just redirect to login if not logged in
+// const withAuth = require('../../utils/auth');
+
+router.get('/', async (req, res) => {
+    try {
+        const tiersData = await Tiers.findAll();
+        res.status(200).json(tiersData);
+    } catch (err) {
+        res.status(400).json(err);
+    }
+});
+
+module.exports = router;

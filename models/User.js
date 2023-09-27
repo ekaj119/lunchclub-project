@@ -1,6 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
+const Tiers = require('./Tiers');
 
 class User extends Model {
   checkPassword(loginPw) {
@@ -35,6 +36,10 @@ User.init(
         len: [8],
       },
     },
+    // selectedTiersId: {
+    //   type: DataTypes.INTEGER,
+    //   allowNull: false,
+    // }
   },
   {
     hooks: {
@@ -55,4 +60,10 @@ User.init(
   }
 );
 
+// User.belongsTo(Tiers, {
+//   foreignKey: 'selectedTiersId',
+//   as: 'selectedTier',
+// });
+
+// User.sync();
 module.exports = User;
