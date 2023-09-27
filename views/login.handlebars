@@ -1,73 +1,21 @@
-<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width" >
-        <title>Login to Gym</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <h1>Login to Gym</h1>
-            <nav>
-                <ul>
-                    
-                <li><a href="/">Home</a></li>
-                <li><a href="/signup">Signup</a></li>
-            
-                </ul>
-            </nav>
-        </header>
-           <main>
-        <div class="login-form">
-            <form action="/login" method="POST">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
+<main>
+    <div class="login-form">
+        <form action="/login" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
 
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
 
-                <button type="submit">Login</button>
-            </form>
-        </div>
-    </main>
-</body>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</main>
 
 
 
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+   
 
-     <script id="login-template" type="text/x-handlebars-template">
-     <label for="username">Username:</label>
-     <input type="text" id="username" name="username" value="{{username}}" required>
-
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-
-    <button type="submit">Login</button>
-
-
-
-     </script>
-
-     <script>
-        var source = document.getElementById("login-template").innerHTML;
-        var template = Handlebars.compile(source);
-
-
-        var usernameInput = document.getElementById("username");
-
-
-        var loginForm = document.querySelector(".login-form");
-
-        
-        usernameInput.addEventListener("input", function(event) { var userInput= event.target.value;
-        var html= template({username: userInput});
-        loginForm.innerHTML = html;
-         
-        
-        });
-     </script>
-    
-</html>
+     
