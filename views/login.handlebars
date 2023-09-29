@@ -1,33 +1,26 @@
 
 <main>
+
     <div class="login-form">
-        <form action="/login" method="POST">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Login</button>
+        <form id="login-form">
+            <h2>Login</h2>
+            <label>Username:</label>
+            <input type="email" name="username" id="email-login">
+            <label>Password:</label>
+            <input type="password" name="password" id="password-login">
+            <button type="submit" id="login-button">Login</button>
         </form>
     </div>
-    <div class="signup-form" id="signup-form">
-        <form action="/signup">
-            <label for="username">Username</label>
-            <input type="text"  id="username" name="username">
-
-
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password">
-
-            {{!-- <label for="membership">Membership:</label>
-            <select id="membership" name="membership">
-                <option value="Bronze">Bronze</option>
-                <option value="Silver">Silver</option>
-                <option value="Gold">Gold</option>
-            </select> --}}
-
-            <button type="submit">Signup!</button>
+    <div class="signup-form">
+        <form id="signup-form">
+            <h2>Signup</h2>
+            <label>Name</label>
+            <input type="text" name="username" id="name-signup">
+            <label>Username</label>
+            <input type="email" name="username" id="email-signup">
+            <label>Password</label>
+            <input type="password" name="password" id="password-signup">
+            <button type="submit" id="signup-button">Signup!</button>
         </form>
     </div>
 </main>

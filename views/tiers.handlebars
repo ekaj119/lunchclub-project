@@ -1,24 +1,11 @@
 <main>
     <h2>Membership Tiers</h2>
+    {{#each tiers as |tier|}}
     <div class="tier">
-        <h3>Tier 1</h3>
-        <h4>Bronze</h4>
-        <p>access to gym floor</p>
-        <p>10</p>
+        <h3>{{tier.name}}</h3>
+        <h4>{{tier.services}}</h4>
+        <p>{{tier.description}}</p>
+        <p>{{tier.price}}</p>
     </div>
-    
-    <div class="tier">
-        <h3>Tier 2</h3>
-        <h4>Silver</h4>
-        <p>access to gym floor</p>
-        <p>15</p>
-    </div>
-
-    <div class="tier">
-        <h3>Tier 3</h3>
-        <h4>Gold</h4>
-        <p>access to gym floor</p>
-        <p>10</p>
-    </div>
-
+    {{/each}}
 </main>
