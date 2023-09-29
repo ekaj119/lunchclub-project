@@ -13,20 +13,10 @@ router.get('/', (req, res) => {
   });
 
 router.get('/tiers', (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect('/profile');
-    return;
-  }
-
   res.render('tiers');
 });
 
 router.get('/profile', (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect('/profile');
-    return;
-  }
-
   res.render('profile');
 });
 
