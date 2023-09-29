@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Tiers extends Model { }
+class Profile extends Model { }
 
-Tiers.init(
+Profile.init(
   {
     name: {
       type: DataTypes.STRING,
@@ -22,15 +22,22 @@ Tiers.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+    user_id: {
+        type: DataTypes.INTEGER,
+        references: {
+            model: 'user',
+            key: 'id',
+        },
+    },
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'tiers',
+    modelName: 'profile',
   }
 );
 
 
-module.exports = Tiers;
+module.exports = Profile;

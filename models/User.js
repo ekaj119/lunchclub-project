@@ -1,7 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
-const Tiers = require('./Tiers');
 
 class User extends Model {
   checkPassword(loginPw) {
@@ -36,19 +35,15 @@ User.init(
         len: [8],
       },
     },
-    // selectedTiersId: {
-    //   type: DataTypes.INTEGER,
-    //   allowNull: false,
-    // }
   },
   {
     hooks: {
       beforeCreate: async (newUserData) => {
-        newUserData.password = await bcrypt.hash(newUserData.password, 10);
+        newUserData.password = await bcrypt.hash(newUserData.password, 5);
         return newUserData;
       },
       beforeUpdate: async (updatedUserData) => {
-        updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+        updatedUserData.password = await bcrypt.hash(updatedUserData.password, 5);
         return updatedUserData;
       },
     },
@@ -60,10 +55,4 @@ User.init(
   }
 );
 
-// User.belongsTo(Tiers, {
-//   foreignKey: 'selectedTiersId',
-//   as: 'selectedTier',
-// });
-
-// User.sync();
 module.exports = User;
