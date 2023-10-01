@@ -1,8 +1,8 @@
-# Gym
+# The Gym
 
 
 ## Our Mission
-We set out to create an applictation that can
+We set out to create an applictation that a gym can use to create and house their members information. This app has the ability to create and have members earn different teirs of memberships. They are also allowed to log back in and veiw previous meberships as well.
 
 ## Application Requiremnts:
 You and your group will use everything you’ve learned over the past six weeks to create a real-world full-stack application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
@@ -24,20 +24,14 @@ You and your group will use everything you’ve learned over the past six weeks 
 
 Finally, you must add your project to the portfolio that you created in Module 2.
 
-## The Two API's
-* [D]() - 
-* [D]() - 
-
 ## The Creators:
-**Steven** - 
-
+**Steven** 
 **Amanda** 
-
-**Jake** - 
+**Jake** 
 
 
 ### Challenges:
-Challenges that arose:
+Challenges that arose: The handle bars was the most stressful part of this project. But it was nice to work through them and learn from out mistakes when first starting.
  
 
 
@@ -52,6 +46,6 @@ Challenges that arose:
 * [D]()
 
 ### PowerPoint Presentation Link:
-[D]()
+[The Gym](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit#slide=id.p)
 
 # Enjoy
