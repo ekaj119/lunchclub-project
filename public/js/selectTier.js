@@ -1,10 +1,10 @@
 const selectTierHandler = async (event) => {
     event.preventDefault();
 
-    const name = document.querySelector('#name').value
-    const services = document.querySelector('#services').value
-    const description = document.querySelector('#description').value
-    const price = document.querySelector('#price').value
+    const name = document.querySelector('#tier_name').value
+    const services = document.querySelector('#tier_services').value
+    const description = document.querySelector('#tier_description').value
+    const price = document.querySelector('#tier_price').value
     const user_id = document.querySelector('#user_id').value
   
     if (name && services && description && price && user_id) {
@@ -17,7 +17,7 @@ const selectTierHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace(`/profile`);
+        document.location.replace(`/profile/${id}`);
       } else {
         alert('Failed to update Tier');
       }
@@ -29,5 +29,5 @@ const selectTierHandler = async (event) => {
 };
 
 document
-    .querySelector("#futureButton")
+    .querySelector("#tier_btn")
     .addEventListener("click", selectTierHandler);

@@ -2,10 +2,12 @@
     <h2>Membership Tiers</h2>
     {{#each tiers as |tier|}}
     <div class="tier">
-        <h3>{{tier.name}}</h3>
-        <h4>{{tier.services}}</h4>
-        <p>{{tier.description}}</p>
-        <p>{{tier.price}}</p>
+        <h3 id="tier_name">{{tier.name}}</h3>
+        <h4 id="tier_services">{{tier.services}}</h4>
+        <p id="tier_description">{{tier.description}}</p>
+        <p id="tier_price">{{tier.price}}</p>
+        <button id="tier_btn">Select</button>
     </div>
     {{/each}}
 </main>
+<script src="/js/selectTier.js"></script>
