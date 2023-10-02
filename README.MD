@@ -1,8 +1,8 @@
 # The Gym
-
+Do you feel like you need to join a gym? Well here at Gym you can sign up and choose from three different tiers of memberships. With the ability to login at a later date and check on your membership status and see what's new!
 
 ## Our Mission
-We set out to create an applictation that a gym can use to create and house their members information. This app has the ability to create and have members earn different teirs of memberships. They are also allowed to log back in and veiw previous meberships as well.
+We set out to create an application that a gym can use to create and house their members information. This app has the ability to create and have members earn different tiers of memberships. They are also allowed to log back in and veiw previous memberships as well.
 
 ## Application Requiremnts:
 You and your group will use everything you’ve learned over the past six weeks to create a real-world full-stack application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
@@ -31,14 +31,11 @@ Finally, you must add your project to the portfolio that you created in Module 2
 
 
 ### Challenges:
-Challenges that arose: The handle bars was the most stressful part of this project. But it was nice to work through them and learn from out mistakes when first starting.
+Challenges that arose: The handle bars was the most stressful part of this project. But it was nice to work through them and learn from our mistakes when first starting. (shoutout to Steven TA for the help).
  
-
-
 ### Successes:
+We got our interactive website to work functionally for the most part and got to master the handlebars in the last class.
 
-
-## Overall
 
 
 # Links to Project
